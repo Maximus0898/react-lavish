@@ -10,6 +10,7 @@ import Home from './components/pages/HomePage/Home';
 import './App.css';
 
 import Navbar from './components/Navbar';
+import Footer from './components/pages/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
