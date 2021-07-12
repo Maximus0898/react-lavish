@@ -6,6 +6,8 @@ import {
   NavLink,
 } from 'react-router-dom';
 import Home from './components/pages/HomePage/Home';
+import Services from './components/pages/Services/Services';
+import Products from './components/pages/Products/Products';
 
 import './App.css';
 
@@ -18,6 +20,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/products" component={Products} />
       </Switch>
       <Footer />
     </Router>
